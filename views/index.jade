@@ -1,26 +1,26 @@
-//- extends layout
+extends layout
 
-//- block content
-//-   h1= title
-//-   p Welcome to #{title} 
+block content
+  h1= title
+  p Welcome to #{title} 
 
-//-   form(action="http://localhost:3000/", method='POST')
-//-   p Todo: 
-//-       input(type="text" name="todo" placeholder='hello') 
-//-   input(type='submit', value='Submit')
+  form(action="http://localhost:3000/", method='POST')
+    p Todo: 
+        input(type="text" name="todo" placeholder='hello') 
+    button(type='submit' value='Submit') Submit
 
-html
-html
-head
-title Form Tester
-body
-form(action = "/", method = "POST")
-div
-label(for = "say") Say:
-input(name = "say" value = "Hi")
-br
-div
-label(for = "to") To:
-input(name = "to" value = "Express forms")
-br
-button(type = "submit") Send my greetings
+//- html
+//- html
+//- head
+//- title Form Tester #{title}
+//- body
+//- form(action = "/", method = "POST")
+//- div
+//- label(for = "say") Say:
+//- input(name = "say" value = "Hi")
+//- br
+//- div
+//- label(for = "to") To:
+//- input(name = "to" value = "Express forms")
+//- br
+//- button(type = "submit") Send my greetings
